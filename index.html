@@ -7,6 +7,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theem.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
@@ -32,7 +34,16 @@
         </header>
 
         <main>
-            <section>
+
+            <nav class="sticky-nav">
+                <a href="index.html">Home</a>
+                <a href="05-nov.html"> Filing</a>
+                <a href="#"> Payments</a>
+                <a href="#">Support</a>
+                <a href="#"> About</a>
+            </nav>
+            <section class="Welcome">
+
                 <h2>Welcome to the Portal</h2>
                 <p>This online system allows registered taxpayers to <b>file returns</b>,<i> manage payments</i>,
                     and track submissions online. The portal is designed to simplify communication
@@ -48,15 +59,15 @@
                     <figcaption>An illustration of a Container</figcaption>
                 </figure>
             </section>
-            <article>
+            <article class="announcement">
                 <h2>Announcement: VAT Filing Deadline Extended</h2>
-                <p>
+                <p class="p">
                     The deadline for quarterly VAT filing
                     has been extended by two weeks to accommodate
                     the recent system maintenance window.
                 </p>
                 <figure>
-                    <p>All pending VAT submissions will now be accepted until
+                    <p class="blockquote">All pending VAT submissions will now be accepted until
                         the end of the month without penalty.</p>
                     <figcaption>Source:<span class="Source">Portal Communications Team</span></figcaption>
                 </figure>
@@ -65,10 +76,10 @@
                 </footer>
             </article>
 
-            <section>
+            <section class="filling-types">
                 <h2>Recent Filing Types</h2>
                 <h4>Filing status for the current period</h4>
-                <table border="1">
+                <table cellpadding="12" cellspacing="0">
 
                     <tr>
                         <th>Tax Type</th>
@@ -95,14 +106,14 @@
 
                     </tr>
                 </table>
-                <div>
+                <div class="progress-wrapper">
                     <label for="completion">
                         Overall filing completion this quarter:
                     </label>
                     <progress id="completion" max="100" value="70">70%</progress>
 
                 </div>
-                <div>
+                <div  class="progress-wrapper">
                     <label for="score">Average review score for submitted filings: </label>
                     <progress id="score" max="100" value="100"></progress>
                 </div>
