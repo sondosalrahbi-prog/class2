@@ -113,33 +113,35 @@
                     <progress id="completion" max="100" value="70">70%</progress>
 
                 </div>
-                <div  class="progress-wrapper">
+                <div class="progress-wrapper">
                     <label for="score">Average review score for submitted filings: </label>
                     <progress id="score" max="100" value="100"></progress>
                 </div>
             </section>
-            <section>
+            <section class="payment">
                 <form>
                     <h2>Register a Payment</h2>
-                    <fieldset>
-                        <legend>Personal details</legend>
+                    <div class="details">
+                        <p class="details-style">Personal details</p>
+
+                        <span class="Secure">Secure</span>
                         <div>
-                            <label>Full Name</label>
+                            <label class="required">Full Name</label>
                             <input type="text" id="fullName" name="fullName">
                         </div>
                         <div>
-                            <label>Email</label>
+                            <label class="required">Email</label>
                             <input type="email">
 
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>
+                    </div>
+                    <div class="details">
+                        <p class="details-style">
                             Payment details
-                        </legend>
+                        </p>
 
                         <div>
-                            <label for="amount"> Amount (OMR)</label>
+                            <label for="amount" class="required"> Amount (OMR)</label>
                             <input type="number" id="amount" name="amount" list="amounts" min="0" step="0.01" required>
                             <small> Enter the amount in Omani Rials, up to two decimal places.</small>
 
@@ -148,37 +150,41 @@
 
 
                         <div>
-                            <label for="type">Tax Type</label>
-                            <select id="type" name="type">
+                            <label for="type" class="required">Tax Type</label>
+                            <select id="type" name="type" class="select">
                                 <option>-- select tex type --</option>
                                 <option value="cit">CIT</option>
                                 <option value="vat">VAT</option>
                                 <option value="pit">PIT</option>
                             </select>
                         </div>
-                    </fieldset>
+                    </div>
                     <div>
-                        <input type="checkbox" required>
-                        <label> I confirm the information above is accurate </label>
-
+                      <input class="checkbox" type="checkbox" required> 
+                        <label class="confirm"> I confirm the information above is accurate </label>
+ 
 
                     </div>
-                    <button type="submit">Submit Payment</button>
-                    <button type="reset">Clear Form</button>
+                    <button type="submit" class="payment-btn">Submit Payment</button>
+                    <button type="reset" class="payment-btn">Clear Form</button>
                 </form>
             </section>
-            <section>
-                <h2>Quick Links</h2>
-                <nav>
-                    <ol>
-                        <li><a href="#">How to file a VAT return</a></li>
-                        <li><a href="#">Payment methods accepted</a></li>
-                        <li><a href="#">Download tax certificates</a></li>
-                        <li><a href="#">Contact a support agent</a></li>
-                    </ol>
-                </nav>
-                <h2>Key Terms</h2>
-                <dl>
+
+
+            <section class="links" >
+                <div class="final-info">
+                    <h2>Quick Links</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">How to file a VAT return</a></li>
+                            <li><a href="#">Payment methods accepted</a></li>
+                            <li><a href="#">Download tax certificates</a></li>
+                            <li><a href="#">Contact a support agent</a></li>
+                        </ul>
+                    </nav>
+                
+                <h3>Key Terms</h3>
+                <dl >
                     <dt>VAT</dt>
                     <dd>A tax added to most goods
                         and services at the point of sale.</dd>
@@ -186,20 +192,21 @@
                     <dd>The date range a given return or payment covers.</dd>
                 </dl>
 
-                <h2>Frequently Asked Questions</h2>
+                <h3>Frequently Asked Questions</h3>
 
                 <details>
                     <summary>What happens if I miss a filing deadline?</summary>
-                    <p>
-
+                    <p class="p-summary">
+late submissions ....
                     </p>
-                </details>
+                </details >
                 <details>
                     <summary>Can I edit a submitted return?</summary>
-                    <p>
-
+                    <p class="p-summary">
+Submitted returns connt be edited ....
                     </p>
                 </details>
+            </div>
             </section>
         </main>
 
